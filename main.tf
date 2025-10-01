@@ -13,6 +13,9 @@ module "compute" {
   source = "./compute"
   subnet_id = module.networking.subnet_id
   security_group_id = module.networking.web_sg_id
+  ami_id = var.ami_id
+  instance_type = var.instance_type
+  key_name = var.key_name
 }
 
 module "storage" {

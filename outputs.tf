@@ -1,8 +1,5 @@
 ## Outputs (outputs.tf)
-output "ec2_instance_ip" {
-  description = "Public IP of EC2 instance"
-  value       = module.compute.ec2_instance_ip
-}
+
 
 output "s3_bucket_name" {
   description = "S3 Bucket endpoint"

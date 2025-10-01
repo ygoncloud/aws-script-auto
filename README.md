@@ -1,30 +1,29 @@
-# 🚀 AWS DevOps Automation Scripts
+# AWS DevOps Automation
 
-## 📌 Overview
-This repository contains **daily-use DevOps automation scripts** designed to simplify infrastructure provisioning, server setup, and cloud management tasks. The main automation script **provisions an AWS EC2 instance using Terraform** and **configures it automatically using a Bash script**.
+This repository provides automation scripts for common AWS DevOps tasks. The primary script uses Terraform to provision an AWS EC2 instance and a Bash script for automatic configuration.
 
-## 🔧 Features
-✔ **Infrastructure as Code (IaC)** with Terraform  
-✔ **Automated server provisioning** on AWS  
-✔ **Docker & Nginx auto-installation**  
-✔ **AWS CLI setup for cloud resource management**  
-✔ **Scalable – Modify Terraform variables to deploy multiple instances**  
+## Features
 
----
+*   **Infrastructure as Code (IaC)**: Leverages Terraform for defining and managing infrastructure.
+*   **Automated AWS Server Provisioning**: Quickly sets up EC2 instances.
+*   **Docker & Nginx Installation**: Automatically installs Docker and Nginx on provisioned servers.
+*   **AWS CLI Setup**: Configures AWS CLI for cloud resource management.
+*   **Scalable Deployments**: Easily deploy multiple instances by adjusting Terraform variables.
 
-## 🛠 Setup & Installation
+## Setup & Installation
 
-### **1️⃣ Prerequisites**
+### 1. Prerequisites
+
 Ensure you have the following installed:
-- **Terraform** (>=1.0) → [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-- **AWS CLI** (>=2.0) → [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-- **AWS IAM Access** → Create an IAM user with EC2 permissions
 
----
+*   **Terraform** (>=1.0): [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+*   **AWS CLI** (>=2.0): [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+*   **AWS IAM Access**: Create an IAM user with appropriate EC2 permissions.
 
-### **2️⃣ Configure AWS Credentials**
-Run the following command to authenticate Terraform with AWS:
+### 2. Configure AWS Credentials
+
+Authenticate Terraform with AWS by running:
 
 ```bash
 aws configure
-
+```

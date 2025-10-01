@@ -14,6 +14,11 @@ variable "key_name" {
   default     = "your-keypair"
 }
 
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  default     = "ami-0c55b159cbfafe1f0" # Example AMI for us-east-1, please update
+}
+
 variable "bucket_name" {
   description = "S3 bucket name"
   default     = "my-unique-s3-bucket-name"
@@ -31,6 +36,5 @@ variable "db_username" {
 
 variable "db_password" {
   description = "RDS database password"
-  default     = "yoursecurepassword"
   sensitive   = true
 }
