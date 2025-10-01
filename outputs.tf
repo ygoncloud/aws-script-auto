@@ -15,3 +15,8 @@ output "iam_role_name" {
   description = "IAM role assigned to EC2"
   value       = module.iam.iam_role_name
 }
+
+output "alb_dns_name" {
+  description = "The DNS name of the Application Load Balancer"
+  value       = module.networking.alb_dns_name
+}
